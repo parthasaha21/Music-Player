@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+          <nav>
+            <div class="circel">
+              <i class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="circel">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </nav>
+          <img src="./images/5619f15fefa3f625eec46877f0a577e4.jpg" alt="" class="song-img">
+           <h1>Night Changes</h1>
+           <p>Song by One Direction</p>
+
+           <audio id="song"
+            src="./WhatsApp Audio 2024-09-02 at 20.46.34_1702b7d3.mp3" type="audio/mpeg">
+          </audio>
+           <input type="range" value="0" id="pogress">
+           <div class="controlls">
+              <div><i class="fa-solid fa-backward"></i></div>
+              <div onclick="playPause()"><i class="fa-solid fa-play" id="control-icon"></i></div>
+              <div><i class="fa-solid fa-forward"></i></div>
+           </div>
+        </div>
+    </div>
+    <script src="./file.js"></script>
+</body>
+</html>
